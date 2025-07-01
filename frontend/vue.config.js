@@ -5,9 +5,9 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/': {
-        target: 'http://localhost:8081',
+        target: 'http://localhost:8080',
         changeOrigin: true,
-        ws: true,
+        // ws: true,
         pathRewrite: { '^/': '/' }
       }
     }
