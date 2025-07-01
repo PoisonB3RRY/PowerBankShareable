@@ -2,7 +2,10 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/powerbank?useSSL=false&serverTimezone=UTC
     username: root
-    password: password
+    password: jianjian123
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
-  mapper-locations: classpath:mapper/*.xml 
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 8080

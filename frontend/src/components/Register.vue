@@ -1,4 +1,5 @@
 <template>
+  <div class="form-title">共享充电宝</div>
   <el-form :model="registerForm" class="register-form" label-width="80px">
     <el-form-item label="账号">
       <el-input v-model="registerForm.username" autocomplete="off" />
@@ -45,6 +46,12 @@ export default {
 </script>
 
 <style scoped>
+.form-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
 .register-form {
   max-width: 400px;
   margin: 100px auto;

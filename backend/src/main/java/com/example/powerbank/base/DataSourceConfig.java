@@ -18,12 +18,6 @@ import javax.sql.DataSource;
 public class DataSourceConfig {
 
     @Bean
-    @ConfigurationProperties(prefix = "spring.datasource")
-    public DataSource dataSource() {
-        return DataSourceBuilder.create().build();
-    }
-
-    @Bean
     public DataSourceTransactionManager transactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }

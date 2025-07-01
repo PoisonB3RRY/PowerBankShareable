@@ -1,7 +1,7 @@
 package com.example.powerbank.service;
 
-import com.example.powerbank.domain.User;
+import com.example.powerbank.domain.UserRegisterDto;
 
 public interface UserService {
-    String register(User user);
+    String register(UserRegisterDto registerUser);
 } 
